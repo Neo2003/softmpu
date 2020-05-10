@@ -1,5 +1,5 @@
 ;
-; Copyright (C) 2013-2014 bjt, elianda
+; Copyright (C) 2013-2020 bjt, elianda
 ;
 ; This program is free software; you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
@@ -29,10 +29,10 @@ Header          DB              0DAh
                 DB              0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h
                 DB              0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h
                 DB              0C4h,0BFh,0Dh,0Ah
-                DB              0B3h,'SoftMPU 1.9 ',0FEh,' Software MPU-401 Emulator ',0B3h,0Dh,0Ah
+                DB              0B3h,'SoftMPU 1.91 ',0FEh,' Software MPU-401 Emulator ',0B3h,0Dh,0Ah
                 DB              0B3h,'S2P edition, github.com/pdewacht/softmpu',0B3h,0Dh,0Ah
                 DB              0B3h,'                                        ',0B3h,0Dh,0Ah
-                DB              0B3h,'Copyright (C) 2013-2014  bjt, elianda   ',0B3h,0Dh,0Ah
+                DB              0B3h,'Copyright (C) 2013-2020  bjt, elianda   ',0B3h,0Dh,0Ah
                 DB              0B3h,'Copyright (C) 2002-2013  The DOSBox Team',0B3h,0Dh,0Ah
                 DB              0C0h
                 DB              0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h,0C4h
@@ -43,7 +43,6 @@ Header          DB              0DAh
 NoEMM           DB              '! Error: EMM386 4.46+ or QEMM 7.03+ not detected',0Dh,0Ah,'$'
 EMMError        DB              '! Error: Port trap failed. Please submit a bug report',0Dh,0Ah,'$'
 LoadedError     DB              '! Error: SoftMPU is already loaded',0Dh,0Ah,'$'
-RTCError        DB              '! Error: Real Time Clock support not detected',0Dh,0Ah,'$'
 SBErrorStart    DB              '! Error: Sound Blaster not detected at port ','$'
 SBErrorMid      DB              ' IRQ ','$'
 SBErrorEnd      DB              0Dh,0Ah,'$'
